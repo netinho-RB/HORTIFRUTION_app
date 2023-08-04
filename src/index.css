@@ -1,0 +1,93 @@
+/* index.css */
+
+/* Estilo global para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  /* Estilo para o cabeçalho da página */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilo para a tabela de histórico de vendas */
+  #tabela-historico {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #tabela-historico th,
+  #tabela-historico td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #tabela-historico th {
+    background-color: #f0f0f0;
+  }
+  
+  #tabela-historico tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para o botão de adicionar ao carrinho */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo para o carrinho de compras */
+  #carrinho {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #carrinho h2 {
+    margin-bottom: 10px;
+  }
+  
+  .carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .carrinho-item button {
+    background-color: #dc3545;
+  }
+  
+  .carrinho-item button:hover {
+    background-color: #bd2130;
+  }
+  
+  .carrinho-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para o rodapé da página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
