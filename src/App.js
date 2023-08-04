@@ -1,5 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import Carrinho from './Carrinho';
+import React from 'react';
+import CadastroVenda from './CadastroVenda';
+
+function App() {
+  return (
+    <div>
+      {/* Outros componentes aqui */}
+      <CadastroVenda />
+    </div>
+  );
+}
+
+export default App;
+
 
 const App = () => {
   const [carrinhoItens, setCarrinhoItens] = useState([]);
