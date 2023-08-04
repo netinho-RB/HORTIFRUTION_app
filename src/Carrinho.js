@@ -2,17 +2,19 @@ import React from 'react';
 
 const Carrinho = ({ carrinhoItens }) => {
   return (
-    <div id="carrinho">
-      <h3>Carrinho de Compras</h3>
-      <ul>
-        {carrinhoItens.map((item) => (
-          <li key={item.id}>
-            <span>{item.nome}</span>
-            <span>Quantidade: {item.quantidade}</span>
-            <span>Preço: R$ {item.preco.toFixed(2)}</span>
-          </li>
-        ))}
-      </ul>
+    <div className="carrinho">
+      <h2>Carrinho de Compras</h2>
+      {carrinhoItens && carrinhoItens.length > 0 ? (
+        <ul>
+          {carrinhoItens.map((item) => (
+            <li key={item.id}>
+              {item.descricao} - {item.quantidade} kg - R$ {item.valor.toFixed(2)}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>O carrinho está vazio.</p>
+      )}
     </div>
   );
 };
